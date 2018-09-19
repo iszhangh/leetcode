@@ -1,0 +1,40 @@
+import java.util.ArrayList;
+import java.util.Arrays;
+import java.util.List;
+
+/**
+ * @author zh
+ *
+ * 2018Äê9ÔÂ18ÈÕ
+ */
+public class SortArrayByParity {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		int[] arr = {3,1,2,4};
+		SortArrayByParity arrayByParity = new SortArrayByParity();
+		System.out.println(Arrays.toString(arrayByParity.sortArrayByParity(arr)));
+	}
+	
+    public int[] sortArrayByParity(int[] A) {
+    	List<Integer> oddList = new ArrayList<>();
+    	List<Integer> evenList = new ArrayList<>();
+    	for(int i = 0; i < A.length; i++) {
+    		if(A[i] % 2 == 1) {
+    			oddList.add(A[i]);
+    		}else {
+    			evenList.add(A[i]);
+    		}
+    	}
+    	System.out.println("oddList"+oddList);
+    	System.out.println("evenList"+evenList);
+    	for(int j = 0; j < evenList.size(); j++) {
+    		A[j] = evenList.get(j);
+    	}
+    	for(int k = evenList.size(); k < oddList.size(); k++) {
+    		A[k] = oddList.get(k);
+    	}
+        return A;
+    }
+
+}

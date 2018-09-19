@@ -1,0 +1,18 @@
+
+/**
+ * @author zh
+ *
+ * 2018Äê9ÔÂ18ÈÕ
+ */
+public class SortArrayByParity {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		
+	}
+	
+    public int[] sortArrayByParity(int[] A) {
+        
+    }
+
+}
