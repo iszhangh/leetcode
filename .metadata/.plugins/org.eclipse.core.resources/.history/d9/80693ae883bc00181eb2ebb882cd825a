@@ -1,0 +1,28 @@
+package leetcode;
+
+/**
+ * @author zh
+ *
+ * 2018Äê9ÔÂ20ÈÕ
+ */
+public class HammingDistance {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		HammingDistance hammingDistance = new HammingDistance();
+		System.out.println(hammingDistance.hammingDistance(1, 4));
+	}
+	
+    public int hammingDistance(int x, int y) {
+        int result = 0;
+        int temp = 0;
+        temp = x ^ y;
+        String str = String.valueOf(temp);
+        for(int i = 0; i < str.length(); i++) {
+        	if(str.charAt(i) == '1') 
+        		result++;
+        }
+        return result;
+    }
+
+}

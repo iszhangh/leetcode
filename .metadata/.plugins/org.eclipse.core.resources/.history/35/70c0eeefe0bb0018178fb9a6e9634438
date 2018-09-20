@@ -2,11 +2,6 @@ package leetcode;
 
 import java.util.HashMap;
 
-/**
- * @author zh
- *
- * 2018Äê9ÔÂ19ÈÕ
- */
 public class NumJewelsInStones {
 
 	public static void main(String[] args) {
